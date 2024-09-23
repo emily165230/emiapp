@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FD00F4"
+    android:background="#4CFD00F4"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="68dp"
         android:fontFamily="@font/allura"
         android:text="hello"
-        android:textColor="#0097FD"
+        android:textColor="#8F0097FD"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
