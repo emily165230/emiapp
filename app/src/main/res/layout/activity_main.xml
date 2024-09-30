@@ -5,15 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CFD00F4"
+    android:background="#5DFD00E8"
+    android:backgroundTint="#B73AB5"
+    android:foregroundTint="#2196F3"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="94dp"
         android:layout_height="68dp"
         android:fontFamily="@font/allura"
         android:text="hello"
-        android:textColor="#8F0097FD"
+        android:textColor="#E9F000FD"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,12 +30,12 @@
         android:layout_width="163dp"
         android:layout_height="327dp"
         android:onClick="knock"
+        android:scrollbarSize="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525"
+        app:layout_constraintVertical_bias="0.309"
         app:srcCompat="@drawable/green" />
 
     <TextView
@@ -44,22 +47,38 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintVertical_bias="0.806" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#CA0B0B"
+        android:backgroundTint="#EBFD00F4"
         android:onClick="reset"
         android:text="reset"
+        android:textColorLink="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.941" />
+
+    <Button
+        android:id="@+id/btnGETOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C8F403F0"
+        android:text="GET OUT"
+        android:textColorLink="#E9E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
