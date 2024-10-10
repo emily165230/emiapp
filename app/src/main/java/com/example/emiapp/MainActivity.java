@@ -1,5 +1,4 @@
 package com.example.emiapp;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -7,19 +6,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.DialogInterface;
 import androidx.appcompat.app.AlertDialog;
-
-
 import androidx.appcompat.app.AppCompatActivity;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     private int counter;
-
     private Button btnGetOut;
 
-    btnGetOut = (Button)findViewById(R.id.btnGETOUT)
-        EventHandler();
+    private static final String TAG = "MainActivity";
 
-    private void EvantHandler() {
+    private void EventHandler() {
         btnGetOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         counter = 10;
         TextView counterTextView = findViewById(R.id.textview_counter);
         counterTextView.setText(String.valueOf(counter));
-    }
+        btnGetOut = (Button)findViewById(R.id.btnGETOUT);
+        Log.e(TAG, "MainActivity::OnCreate");
 
+    }
     public void knock(View view) {
         if (counter > 0) {
             counter--;
@@ -74,5 +70,5 @@ public class MainActivity extends AppCompatActivity {
         ImageView eggImageView = findViewById(R.id.imageview_egg);
         eggImageView.setImageResource(R.drawable.green);
     }
-}
 
+    }
