@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btnGetOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 AlertDialog.Builder Builder = new AlertDialog.Builder(MainActivity.this);
                 Builder.setMessage("Are You Sure You Wanna Leave?")
                         .setCancelable(false)
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         counterTextView.setText(String.valueOf(counter));
         btnGetOut = (Button)findViewById(R.id.btnGETOUT);
         Log.e(TAG, "MainActivity::OnCreate");
+        EventHandler();
 
     }
     public void knock(View view) {
